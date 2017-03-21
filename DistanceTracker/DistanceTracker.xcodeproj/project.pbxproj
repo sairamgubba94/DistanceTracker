@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041595BE1E817B2E00D0B2A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041595BD1E817B2E00D0B2A0 /* AppDelegate.swift */; };
+		041595C01E817B2E00D0B2A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041595BF1E817B2E00D0B2A0 /* ViewController.swift */; };
+		041595C31E817B2E00D0B2A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041595C11E817B2E00D0B2A0 /* Main.storyboard */; };
+		041595C51E817B2E00D0B2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041595C41E817B2E00D0B2A0 /* Assets.xcassets */; };
+		041595C81E817B2E00D0B2A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041595C61E817B2E00D0B2A0 /* LaunchScreen.storyboard */; };
+		041595D31E817B2E00D0B2A0 /* DistanceTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041595D21E817B2E00D0B2A0 /* DistanceTrackerTests.swift */; };
+		041595DE1E817B2F00D0B2A0 /* DistanceTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041595DD1E817B2F00D0B2A0 /* DistanceTrackerUITests.swift */; };
+		041595EE1E81A4E500D0B2A0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041595ED1E81A4E500D0B2A0 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		041595CF1E817B2E00D0B2A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041595B21E817B2C00D0B2A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041595B91E817B2C00D0B2A0;
+			remoteInfo = DistanceTracker;
+		};
+		041595DA1E817B2E00D0B2A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041595B21E817B2C00D0B2A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041595B91E817B2C00D0B2A0;
+			remoteInfo = DistanceTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041595BA1E817B2E00D0B2A0 /* DistanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistanceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041595BD1E817B2E00D0B2A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		041595BF1E817B2E00D0B2A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		041595C21E817B2E00D0B2A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		041595C41E817B2E00D0B2A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041595C71E817B2E00D0B2A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		041595C91E817B2E00D0B2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041595CE1E817B2E00D0B2A0 /* DistanceTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DistanceTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		041595D21E817B2E00D0B2A0 /* DistanceTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceTrackerTests.swift; sourceTree = "<group>"; };
+		041595D41E817B2E00D0B2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041595D91E817B2E00D0B2A0 /* DistanceTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DistanceTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		041595DD1E817B2F00D0B2A0 /* DistanceTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceTrackerUITests.swift; sourceTree = "<group>"; };
+		041595DF1E817B2F00D0B2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041595EB1E81A4E500D0B2A0 /* DistanceTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DistanceTracker.entitlements; sourceTree = "<group>"; };
+		041595ED1E81A4E500D0B2A0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041595B71E817B2C00D0B2A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041595EE1E81A4E500D0B2A0 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041595CB1E817B2E00D0B2A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041595D61E817B2E00D0B2A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041595B11E817B2C00D0B2A0 = {
+			isa = PBXGroup;
+			children = (
+				041595BC1E817B2E00D0B2A0 /* DistanceTracker */,
+				041595D11E817B2E00D0B2A0 /* DistanceTrackerTests */,
+				041595DC1E817B2E00D0B2A0 /* DistanceTrackerUITests */,
+				041595BB1E817B2E00D0B2A0 /* Products */,
+				041595EC1E81A4E500D0B2A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		041595BB1E817B2E00D0B2A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				041595BA1E817B2E00D0B2A0 /* DistanceTracker.app */,
+				041595CE1E817B2E00D0B2A0 /* DistanceTrackerTests.xctest */,
+				041595D91E817B2E00D0B2A0 /* DistanceTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		041595BC1E817B2E00D0B2A0 /* DistanceTracker */ = {
+			isa = PBXGroup;
+			children = (
+				041595EB1E81A4E500D0B2A0 /* DistanceTracker.entitlements */,
+				041595BD1E817B2E00D0B2A0 /* AppDelegate.swift */,
+				041595BF1E817B2E00D0B2A0 /* ViewController.swift */,
+				041595C11E817B2E00D0B2A0 /* Main.storyboard */,
+				041595C41E817B2E00D0B2A0 /* Assets.xcassets */,
+				041595C61E817B2E00D0B2A0 /* LaunchScreen.storyboard */,
+				041595C91E817B2E00D0B2A0 /* Info.plist */,
+			);
+			path = DistanceTracker;
+			sourceTree = "<group>";
+		};
+		041595D11E817B2E00D0B2A0 /* DistanceTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				041595D21E817B2E00D0B2A0 /* DistanceTrackerTests.swift */,
+				041595D41E817B2E00D0B2A0 /* Info.plist */,
+			);
+			path = DistanceTrackerTests;
+			sourceTree = "<group>";
+		};
+		041595DC1E817B2E00D0B2A0 /* DistanceTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				041595DD1E817B2F00D0B2A0 /* DistanceTrackerUITests.swift */,
+				041595DF1E817B2F00D0B2A0 /* Info.plist */,
+			);
+			path = DistanceTrackerUITests;
+			sourceTree = "<group>";
+		};
+		041595EC1E81A4E500D0B2A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				041595ED1E81A4E500D0B2A0 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		041595B91E817B2C00D0B2A0 /* DistanceTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041595E21E817B2F00D0B2A0 /* Build configuration list for PBXNativeTarget "DistanceTracker" */;
+			buildPhases = (
+				041595B61E817B2C00D0B2A0 /* Sources */,
+				041595B71E817B2C00D0B2A0 /* Frameworks */,
+				041595B81E817B2C00D0B2A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DistanceTracker;
+			productName = DistanceTracker;
+			productReference = 041595BA1E817B2E00D0B2A0 /* DistanceTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		041595CD1E817B2E00D0B2A0 /* DistanceTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041595E51E817B2F00D0B2A0 /* Build configuration list for PBXNativeTarget "DistanceTrackerTests" */;
+			buildPhases = (
+				041595CA1E817B2E00D0B2A0 /* Sources */,
+				041595CB1E817B2E00D0B2A0 /* Frameworks */,
+				041595CC1E817B2E00D0B2A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041595D01E817B2E00D0B2A0 /* PBXTargetDependency */,
+			);
+			name = DistanceTrackerTests;
+			productName = DistanceTrackerTests;
+			productReference = 041595CE1E817B2E00D0B2A0 /* DistanceTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		041595D81E817B2E00D0B2A0 /* DistanceTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041595E81E817B2F00D0B2A0 /* Build configuration list for PBXNativeTarget "DistanceTrackerUITests" */;
+			buildPhases = (
+				041595D51E817B2E00D0B2A0 /* Sources */,
+				041595D61E817B2E00D0B2A0 /* Frameworks */,
+				041595D71E817B2E00D0B2A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041595DB1E817B2E00D0B2A0 /* PBXTargetDependency */,
+			);
+			name = DistanceTrackerUITests;
+			productName = DistanceTrackerUITests;
+			productReference = 041595D91E817B2E00D0B2A0 /* DistanceTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		041595B21E817B2C00D0B2A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					041595B91E817B2C00D0B2A0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SF5AHNN5RK;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					041595CD1E817B2E00D0B2A0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SF5AHNN5RK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 041595B91E817B2C00D0B2A0;
+					};
+					041595D81E817B2E00D0B2A0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SF5AHNN5RK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 041595B91E817B2C00D0B2A0;
+					};
+				};
+			};
+			buildConfigurationList = 041595B51E817B2C00D0B2A0 /* Build configuration list for PBXProject "DistanceTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 041595B11E817B2C00D0B2A0;
+			productRefGroup = 041595BB1E817B2E00D0B2A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				041595B91E817B2C00D0B2A0 /* DistanceTracker */,
+				041595CD1E817B2E00D0B2A0 /* DistanceTrackerTests */,
+				041595D81E817B2E00D0B2A0 /* DistanceTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		041595B81E817B2C00D0B2A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041595C81E817B2E00D0B2A0 /* LaunchScreen.storyboard in Resources */,
+				041595C51E817B2E00D0B2A0 /* Assets.xcassets in Resources */,
+				041595C31E817B2E00D0B2A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041595CC1E817B2E00D0B2A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041595D71E817B2E00D0B2A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		041595B61E817B2C00D0B2A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041595C01E817B2E00D0B2A0 /* ViewController.swift in Sources */,
+				041595BE1E817B2E00D0B2A0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041595CA1E817B2E00D0B2A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041595D31E817B2E00D0B2A0 /* DistanceTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041595D51E817B2E00D0B2A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041595DE1E817B2F00D0B2A0 /* DistanceTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		041595D01E817B2E00D0B2A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041595B91E817B2C00D0B2A0 /* DistanceTracker */;
+			targetProxy = 041595CF1E817B2E00D0B2A0 /* PBXContainerItemProxy */;
+		};
+		041595DB1E817B2E00D0B2A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041595B91E817B2C00D0B2A0 /* DistanceTracker */;
+			targetProxy = 041595DA1E817B2E00D0B2A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		041595C11E817B2E00D0B2A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041595C21E817B2E00D0B2A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		041595C61E817B2E00D0B2A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041595C71E817B2E00D0B2A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		041595E01E817B2F00D0B2A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		041595E11E817B2F00D0B2A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		041595E31E817B2F00D0B2A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DistanceTracker/DistanceTracker.entitlements;
+				DEVELOPMENT_TEAM = SF5AHNN5RK;
+				INFOPLIST_FILE = DistanceTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.start4me.CirclesNew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2cc73b34-cc76-4eae-8e0d-bc51621b9e9e";
+				PROVISIONING_PROFILE_SPECIFIER = CirclesNew_Dev_02Mar17;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		041595E41E817B2F00D0B2A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DistanceTracker/DistanceTracker.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sunil Bhat (964L224473)";
+				DEVELOPMENT_TEAM = SF5AHNN5RK;
+				INFOPLIST_FILE = DistanceTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.start4me.CirclesNew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2cc73b34-cc76-4eae-8e0d-bc51621b9e9e";
+				PROVISIONING_PROFILE_SPECIFIER = CirclesNew_Dev_02Mar17;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		041595E61E817B2F00D0B2A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SF5AHNN5RK;
+				INFOPLIST_FILE = DistanceTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.start4me.DistanceTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DistanceTracker.app/DistanceTracker";
+			};
+			name = Debug;
+		};
+		041595E71E817B2F00D0B2A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SF5AHNN5RK;
+				INFOPLIST_FILE = DistanceTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.start4me.DistanceTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DistanceTracker.app/DistanceTracker";
+			};
+			name = Release;
+		};
+		041595E91E817B2F00D0B2A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SF5AHNN5RK;
+				INFOPLIST_FILE = DistanceTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.start4me.DistanceTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DistanceTracker;
+			};
+			name = Debug;
+		};
+		041595EA1E817B2F00D0B2A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SF5AHNN5RK;
+				INFOPLIST_FILE = DistanceTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.start4me.DistanceTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DistanceTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		041595B51E817B2C00D0B2A0 /* Build configuration list for PBXProject "DistanceTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041595E01E817B2F00D0B2A0 /* Debug */,
+				041595E11E817B2F00D0B2A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041595E21E817B2F00D0B2A0 /* Build configuration list for PBXNativeTarget "DistanceTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041595E31E817B2F00D0B2A0 /* Debug */,
+				041595E41E817B2F00D0B2A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		041595E51E817B2F00D0B2A0 /* Build configuration list for PBXNativeTarget "DistanceTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041595E61E817B2F00D0B2A0 /* Debug */,
+				041595E71E817B2F00D0B2A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		041595E81E817B2F00D0B2A0 /* Build configuration list for PBXNativeTarget "DistanceTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041595E91E817B2F00D0B2A0 /* Debug */,
+				041595EA1E817B2F00D0B2A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 041595B21E817B2C00D0B2A0 /* Project object */;
+}

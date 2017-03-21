@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DistanceTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJ1-pO-n0d">
+                                <rect key="frame" x="103" y="39" width="170" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="E63-TE-ktS"/>
+                                    <constraint firstAttribute="width" constant="170" id="uvN-bM-bYy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqw-o1-Ip7">
+                                <rect key="frame" x="76" y="70" width="84" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="MwA-nz-n7b"/>
+                                    <constraint firstAttribute="height" constant="21" id="Xyx-tx-D7S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrX-Qz-dcu">
+                                <rect key="frame" x="186" y="70" width="127" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="Iwy-81-2WZ"/>
+                                    <constraint firstAttribute="height" constant="21" id="ZvM-Lw-B4b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mrt-oU-XmP">
+                                <rect key="frame" x="0.0" y="225" width="375" height="442"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ykz-Qj-DrI"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFr-D3-JCa">
+                                <rect key="frame" x="108" y="194" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="tTE-zm-zBj"/>
+                                    <constraint firstAttribute="height" constant="30" id="wZl-CG-Izd"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aNt-dg-odN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ei4-1r-NZF">
+                                <rect key="frame" x="76" y="99" width="91" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Aqb-7j-qZD"/>
+                                    <constraint firstAttribute="width" constant="91" id="G5J-mK-gEe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUx-z8-K35">
+                                <rect key="frame" x="193" y="99" width="115" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NRK-As-9sA"/>
+                                    <constraint firstAttribute="width" constant="115" id="mVW-4W-MCQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKU-3S-gZg">
+                                <rect key="frame" x="8" y="128" width="359" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="z2N-6Q-66j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXo-Og-yq5">
+                                <rect key="frame" x="203" y="194" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="q0Z-7e-xKC"/>
+                                    <constraint firstAttribute="width" constant="55" id="yL0-mf-sh6"/>
+                                </constraints>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pauseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OFd-nu-1oN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJX-ix-sEd">
+                                <rect key="frame" x="313" y="76" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="das-X0-ng8"/>
+                                    <constraint firstAttribute="height" constant="30" id="mWb-59-9wj"/>
+                                </constraints>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="shareAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qGD-fJ-Do8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aJ1-pO-n0d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="8eU-i2-Rj5"/>
+                            <constraint firstItem="WrX-Qz-dcu" firstAttribute="top" secondItem="aJ1-pO-n0d" secondAttribute="bottom" constant="10" id="CMh-Rg-EeC"/>
+                            <constraint firstItem="Ei4-1r-NZF" firstAttribute="top" secondItem="fqw-o1-Ip7" secondAttribute="bottom" constant="8" id="Ge8-iP-R09"/>
+                            <constraint firstItem="gJX-ix-sEd" firstAttribute="top" secondItem="aJ1-pO-n0d" secondAttribute="bottom" constant="16" id="H3I-Jb-h4k"/>
+                            <constraint firstAttribute="trailing" secondItem="mrt-oU-XmP" secondAttribute="trailing" id="IF4-12-BkG"/>
+                            <constraint firstItem="QKU-3S-gZg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="Ldh-hG-Bb0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mrt-oU-XmP" secondAttribute="bottom" id="MET-wd-cpW"/>
+                            <constraint firstItem="Ei4-1r-NZF" firstAttribute="leading" secondItem="fqw-o1-Ip7" secondAttribute="leading" id="NEi-k4-Uz3"/>
+                            <constraint firstItem="gJX-ix-sEd" firstAttribute="leading" secondItem="WrX-Qz-dcu" secondAttribute="trailing" id="NYM-Uf-rUH"/>
+                            <constraint firstItem="JUx-z8-K35" firstAttribute="top" secondItem="WrX-Qz-dcu" secondAttribute="bottom" constant="8" id="PYs-Qb-yUw"/>
+                            <constraint firstItem="fqw-o1-Ip7" firstAttribute="top" secondItem="aJ1-pO-n0d" secondAttribute="bottom" constant="10" id="T3d-3c-QRl"/>
+                            <constraint firstItem="bFr-D3-JCa" firstAttribute="top" secondItem="QKU-3S-gZg" secondAttribute="bottom" constant="2" id="V5h-IP-bNK"/>
+                            <constraint firstItem="aJ1-pO-n0d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WNn-bF-6hb"/>
+                            <constraint firstItem="CXo-Og-yq5" firstAttribute="top" secondItem="QKU-3S-gZg" secondAttribute="bottom" constant="2" id="YxR-mO-s95"/>
+                            <constraint firstItem="JUx-z8-K35" firstAttribute="leading" secondItem="Ei4-1r-NZF" secondAttribute="trailing" constant="26" id="chJ-9u-g4R"/>
+                            <constraint firstItem="bFr-D3-JCa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-56.5" id="eOh-2h-7M6"/>
+                            <constraint firstItem="mrt-oU-XmP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eXc-jy-XG9"/>
+                            <constraint firstItem="mrt-oU-XmP" firstAttribute="top" secondItem="bFr-D3-JCa" secondAttribute="bottom" constant="1" id="gUi-xC-k0h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QKU-3S-gZg" secondAttribute="trailing" constant="-8" id="j5l-jL-rPa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gJX-ix-sEd" secondAttribute="trailing" id="uKA-uS-3F4"/>
+                            <constraint firstItem="CXo-Og-yq5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="42.5" id="ugl-sX-6kr"/>
+                            <constraint firstItem="WrX-Qz-dcu" firstAttribute="leading" secondItem="fqw-o1-Ip7" secondAttribute="trailing" constant="26" id="wCr-8a-fjg"/>
+                            <constraint firstItem="QKU-3S-gZg" firstAttribute="top" secondItem="Ei4-1r-NZF" secondAttribute="bottom" constant="8" id="z7m-h6-cb8"/>
+                            <constraint firstItem="fqw-o1-Ip7" firstAttribute="leading" secondItem="aJ1-pO-n0d" secondAttribute="leading" constant="-27" id="zmB-m1-IKJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressOutlet" destination="QKU-3S-gZg" id="5If-P8-JED"/>
+                        <outlet property="distanceOutlet" destination="WrX-Qz-dcu" id="npn-FK-WtU"/>
+                        <outlet property="mapOutlet" destination="mrt-oU-XmP" id="Lqi-zY-uqQ"/>
+                        <outlet property="pauseOutlet" destination="CXo-Og-yq5" id="sI0-C9-tz6"/>
+                        <outlet property="startOutlet" destination="bFr-D3-JCa" id="yQ5-KB-ubN"/>
+                        <outlet property="stepsOutlet" destination="JUx-z8-K35" id="ZFN-bJ-d4T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152.80000000000001" y="53.523238380809602"/>
+        </scene>
+    </scenes>
+</document>
